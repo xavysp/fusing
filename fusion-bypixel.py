@@ -183,10 +183,10 @@ print imgVl.shape, imgNir.shape
 #####################################
 # Results #
 print 'Please choose the fusion method which you want to test:'
-print '1 for Laplacian pyramid based fusion'
-print '2 for Contrast pyramid based fusion here is the error'
-print ('3 For hierarchical based fusion')
-print ('4 Wavelet transform ')
+print '1: for Laplacian pyramid based fusion'
+print '2: for Contrast pyramid based fusion here is the error'
+print ('3: For hierarchical based fusion')
+print ('4: Wavelet transform based fusion ')
 a = input('Choose a number:')
 if a == 1:
     laplacian_pyramid_fusion(imgVl, imgNir)
