@@ -4,7 +4,7 @@ import matplotlib
 matplotlib.use('GTKAgg')  # IF you do't use this line cv2.imshow will give you an error
 # from matplotlib import pyplot
 import numpy as np
-import time
+# import time
 
 
 # ******Image fusion using laplacian pyramid (low-pass filter)
@@ -77,8 +77,6 @@ def laplacian_pyramid_fusion(img1, img2):
         ls_ = cv2.add(ls_, LS[i])
     # image with direct connection each half
     real = np.hstack((img1[:, :cols], img2[:, cols:]))
-    # cv2.imwrite('fusedVl.jpg', ls_)
-    # cv2.imwrite('firstImg.jpg', real)
     print np.shape(ls_)
     cv2.imshow('image fused', ls_)
     cv2.imshow('image natural', real)
@@ -173,7 +171,9 @@ def hierarchical_fusion(img1, img2):
 # *** Function for image fusion based in wavelet transform
 # You can find the algorithm in: Multisensor image fusion using the wavelet transform
 def wavelet_transform_fusion(img1, img2):
-    pass
+    ImgVl = img1.copy()
+    ImgNir = img2.copy()
+
 ############################################
 # Imput data #
 imgVl = cv2.imread('dataset/1826v.bmp')
