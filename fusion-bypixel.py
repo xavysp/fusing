@@ -196,4 +196,4 @@ elif a == 2:
 elif a == 3:
     print('Sorry we are working')
 elif a == 4:
-    print ('...Working please wait for a short time')
+    print ('...Working please wait')
