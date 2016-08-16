@@ -7,7 +7,7 @@ import numpy as np
 # import time
 
 
-# ******Image fusion using laplacian pyramid (low-pass filter)
+# *1*  Image fusion using laplacian pyramid (low-pass filter)
 def laplacian_pyramid_fusion(img1, img2):
     # generating Gaussian pyra mid for visible image
     gImgVl = img1.copy()
@@ -84,7 +84,7 @@ def laplacian_pyramid_fusion(img1, img2):
     cv2.destroyAllWindows()
 
 
-# *** Function that fuse tho image with contrast pyramid fusion method
+# *2*  Function that fuse tho image with contrast pyramid fusion method
 # The tittle of the article is : Merging thermal and visual images by a contrast pyramid
 # SOme errors are bellow
 def contrast_pyramid(img1, img2):
@@ -162,17 +162,18 @@ def contrast_pyramid(img1, img2):
     # cv2.imwrite('fuse.jpg', ls_)
 
 
-# *** Function that hierarchical based image fusion to fuse tho kind of images
+# *3**  Function that hierarchical based image fusion to fuse tho kind of images
 # The article is: hierarchical image fusion
 def hierarchical_fusion(img1, img2):
     pass
 
 
-# *** Function for image fusion based in wavelet transform
+# *4** Function for image fusion based in wavelet transform
 # You can find the algorithm in: Multisensor image fusion using the wavelet transform
 def wavelet_transform_fusion(img1, img2):
     ImgVl = img1.copy()
     ImgNir = img2.copy()
+    print ('This code is not finished yet')
 
 ############################################
 # Imput data #
@@ -195,4 +196,4 @@ elif a == 2:
 elif a == 3:
     print('Sorry we are working')
 elif a == 4:
-    print ('Soon')
+    print ('...Working ')
