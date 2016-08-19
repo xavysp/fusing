@@ -28,7 +28,7 @@ def computeDft(inreal, inimag):
 def myFt(img):
     pi = np.pi
     row, col, depth = np.shape(img)
-    F = np.complex(np.zeros((row,col,depth)))
+    F = np.zeros((row,col,depth))
     s = np.complex(0)
     for d in range(depth):
         for i in range(row):
