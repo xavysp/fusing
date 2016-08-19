@@ -2,23 +2,29 @@
 #  This coding is only for test bloke of codes
 
 import numpy as np
-import cmath
+from scipy.fftpack import fft, ifft
 
 
-def computeDff(input):
-    n = len(input)
-    output =[np.complex(0)]*n
-    for k in range(n):
-        s = np.complex(0)
-        for t in range(n):
-            exponential =np.exp(-(np.complex(2))*np.pi * t * k / n)
-            s += input[t]*exponential
-            # print s
-        output[k] = s
+def computeDft(inreal, inimag):
+    assert len(inreal) == len(inimag)
+    n = len(inreal)
+    outreal = [0.0] * n
+    outimag = [0.0] * n
+    for k in range(n):  # For each output element
+        sumreal = 0.0
+        sumimag = 0.0
+        for t in range(n):  # For each input element
+            angle = 2 * np.pi * t * k / n
+            sumreal += inreal[t] * np.cos(angle) + inimag[t] * np.sin(angle)
+            sumimag += -inreal[t] * np.sin(angle) + inimag[t] * np.cos(angle)
+        outreal[k] = sumreal
+        outimag[k] = sumimag
+    return (outreal, outimag)
 
-    return output
+
+data1 = [1, 2, 3, 4]
+data2 = [2, 4, 6, 8]
+
+print (computeDft(data1, data2))
 
 
-dates = [1, 2, 3, 4]
-
-print (computeDff(dates))
