@@ -42,9 +42,6 @@ def myFt(img):
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
-
-
-
 # read data
 img = cv2.imread('dataset/1826i.bmp')
 
@@ -53,5 +50,18 @@ data2 = [2, 4, 6, 8]
 
 print (computeDft(data1, data2))
 
-myFt(img)
+# myFt(img)
+
+# opencv fourier transform #
+
+grayImg = cv2.imread('dataset/1826i.bmp', 0)
+fImg = np.fft.fft2(grayImg)
+fImgShift = np.fft.fftshift(fImg)
+magnitude_spectrum = 20*np.log(np.abs(fImgShift))
+
+cv2.imshow('Fourier transform image', magnitude_spectrum)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+
 
