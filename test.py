@@ -36,7 +36,7 @@ def myFt(img):
                 s = np.complex(0)
                 for i1 in range(row):
                     for j1 in range(col):
-                        s += img[i1][j1][d]* np.exp(-(np.complex(1))*2*pi*(i*i1+j*j1)/(row*col))
+                        s += img[i1][j1][d] * np.exp(-(np.complex(1))*2*pi*(i*i1+j*j1)/(row*col))
                 F[i][j][d] = s
     cv2.imshow('Fourier Image', F)
     cv2.waitKey(0)
