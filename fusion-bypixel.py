@@ -171,9 +171,11 @@ def hierarchical_fusion(img1, img2):
 # *4** Function for image fusion based in wavelet transform
 # You can find the algorithm in: Multisensor image fusion using the wavelet transform
 def wavelet_transform_fusion(img1, img2):
-    ImgVl = img1.copy()
-    ImgNir = img2.copy()
+    ImgVl = cv2.cvtColor(img1, cv2.COLOR_RGB2GRAY)
+    ImgNir = cv2.cvtColor(img2, cv2.COLOR_RGB2GRAY)
+
     print ('This code is not finished yet')
+
 
 ############################################
 # Imput data #

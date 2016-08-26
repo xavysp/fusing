@@ -26,18 +26,19 @@ def computeDft(inreal, inimag):
 
 # Computing Fourier Transform by myself
 def myFt(img):
+    grayImg = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
     pi = np.pi
-    row, col, depth = np.shape(img)
-    F = np.zeros((row,col,depth))
+    row, col = np.shape(grayImg)
+    F = np.zeros((row,col))
     s = np.complex(0)
-    for d in range(depth):
-        for i in range(row):
-            for j in range(col):
-                s = np.complex(0)
-                for i1 in range(row):
-                    for j1 in range(col):
-                        s += img[i1][j1][d] * np.exp(-(np.complex(1))*2*pi*(i*i1+j*j1)/(row*col))
-                F[i][j][d] = s
+    for i in range(row):
+        for j in range(col):
+            s = np.complex(0)
+            for i1 in range(row):
+                for j1 in range(col):
+                    expo = np.exp(-(np.complex(1))*2*pi*(i*i1+j*j1)/(row*col))
+                    s += grayImg[i1][j1] * expo
+            F[i][j] = s
     cv2.imshow('Fourier Image', F)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
@@ -50,18 +51,18 @@ data2 = [2, 4, 6, 8]
 
 print (computeDft(data1, data2))
 
-# myFt(img)
+myFt(img)
 
 # opencv fourier transform #
 
-grayImg = cv2.imread('dataset/1826i.bmp', 0)
-fImg = np.fft.fft2(grayImg)
-fImgShift = np.fft.fftshift(fImg)
-magnitude_spectrum = 20*np.log(np.abs(fImgShift))
-
-cv2.imshow('Fourier transform image', magnitude_spectrum)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+# grayImg = cv2.imread('dataset/1826i.bmp', 0)
+# fImg = np.fft.fft2(grayImg)
+# fImgShift = np.fft.fftshift(fImg)
+# magnitude_spectrum = 20*np.log(np.abs(fImgShift))
+#
+# cv2.imshow('Fourier transform image', magnitude_spectrum)
+# cv2.waitKey(0)
+# cv2.destroyAllWindows()
 
 
 
