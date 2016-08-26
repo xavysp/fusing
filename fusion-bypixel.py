@@ -173,7 +173,12 @@ def hierarchical_fusion(img1, img2):
 def wavelet_transform_fusion(img1, img2):
     ImgVl = cv2.cvtColor(img1, cv2.COLOR_RGB2GRAY)
     ImgNir = cv2.cvtColor(img2, cv2.COLOR_RGB2GRAY)
-
+    imgVlL1 = np.zeros((np.shape(ImgVl)))
+    row, col = np.shape(imgVlL1)
+    if col % 2 == 0:
+        pass
+    else:
+        pass
     print ('This code is not finished yet')
 
 
