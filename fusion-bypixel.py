@@ -190,7 +190,7 @@ def wavelet_transform_fusion(img1, img2):
 
 ############################################
 # Imput data #
-imgVl = cv2.imread('dataset/1826v.bmp')
+imgVl = cv2.imread('dataset/exam_ir.tiff')
 imgNir = cv2.imread('dataset/1826i.bmp')
 print imgVl.shape, imgNir.shape
 
