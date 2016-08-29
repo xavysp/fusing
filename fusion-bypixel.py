@@ -171,15 +171,21 @@ def hierarchical_fusion(img1, img2):
 # *4** Function for image fusion based in wavelet transform
 # You can find the algorithm in: Multisensor image fusion using the wavelet transform
 def wavelet_transform_fusion(img1, img2):
-    ImgVl = cv2.cvtColor(img1, cv2.COLOR_RGB2GRAY)
+    imgVl = cv2.cvtColor(img1, cv2.COLOR_RGB2GRAY)
     ImgNir = cv2.cvtColor(img2, cv2.COLOR_RGB2GRAY)
-    imgVlL1 = np.zeros((np.shape(ImgVl)))
-    row, col = np.shape(imgVlL1)
-    if col % 2 == 0:
-        pass
-    else:
-        pass
-    print ('This code is not finished yet')
+    imgVlLh = np.zeros((np.shape(imgVl)))
+    row, col = np.shape(imgVlLh)
+    for i in range(row):
+        for j in range(0, col, 4):
+            if j+4 <= col:
+                imgVlLh[i][j] = imgVl[i][j]+imgVl[i][j+1]
+                imgVlLh[i][j+1] = imgVl[i][j+2]+imgVl[i][j+3]
+                imgVlLh[i][j+2] = imgVl[i][j] - imgVl[i][j + 1]
+                imgVlLh[i][j + 3] = imgVl[i][j + 2] - imgVl[i][j + 3]
+
+    cv2.imshow('Horizontal wavelet image', imgVlLh)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
 
 
 ############################################
@@ -203,4 +209,4 @@ elif a == 2:
 elif a == 3:
     print('Sorry we are working')
 elif a == 4:
-    print ('...Working please wait')
+    wavelet_transform_fusion(imgVl, imgNir)
