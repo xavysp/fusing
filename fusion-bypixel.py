@@ -4,6 +4,7 @@ import matplotlib
 matplotlib.use('GTKAgg')  # IF you do't use this line cv2.imshow will give you an error
 # from matplotlib import pyplot
 import numpy as np
+import pywt
 # import time
 
 
@@ -188,9 +189,31 @@ def wavelet_transform_fusion(img1, img2):
     cv2.destroyAllWindows()
 
 
+# *5** Function that can fuse with pywt and image
+def waveletTransformFunction(img1, img2):
+    imgVl = cv2.cvtColor(img1, cv2.COLOR_RGB2GRAY)
+    print (imgVl.shape)
+    imgNir = cv2.cvtColor(img2, cv2.COLOR_RGB2GRAY)
+    wImg= pywt.dwt2(imgVl,'haar')
+    cAv, (cHv, cVv, cDv) = wImg
+    showImg = np.int16(cAv[0])
+    cv2.imshow('firstWavelet image', cHv)
+    cv2.imshow('firstWavelet image1', cVv)
+    cv2.imshow('firstWavelet image2', imgVl)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+    print (cAv.shape)
+    cAv1 = np.int16(cAv)
+    np.savetxt('texcAv.txt', cAv1)
+    np.savetxt('texcHv.txt', cHv)
+    np.sa
+    print (np.int16(cAv))
+
+
+
 ############################################
 # Imput data #
-imgVl = cv2.imread('dataset/exam_ir.tiff')
+imgVl = cv2.imread('dataset/1826v.bmp')
 imgNir = cv2.imread('dataset/1826i.bmp')
 print imgVl.shape, imgNir.shape
 
@@ -201,6 +224,7 @@ print '1: for Laplacian pyramid based fusion'
 print '2: for Contrast pyramid based fusion here is the error'
 print ('3: For hierarchical based fusion')
 print ('4: Wavelet transform based fusion ')
+print ('5: Wavelet transform based fusion using function')
 a = input('Choose a number:')
 if a == 1:
     laplacian_pyramid_fusion(imgVl, imgNir)
@@ -210,3 +234,5 @@ elif a == 3:
     print('Sorry we are working')
 elif a == 4:
     wavelet_transform_fusion(imgVl, imgNir)
+elif a == 5:
+    waveletTransformFunction(imgVl, imgNir)
