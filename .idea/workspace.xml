@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3c6646f-50a7-4937-bd98-0afda83ef9b9" name="Default" comment="Testing in linux, 4th algorithm">
+    <list default="true" id="e3c6646f-50a7-4937-bd98-0afda83ef9b9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fusion-bypixel.py" afterPath="$PROJECT_DIR$/fusion-bypixel.py" />
     </list>
@@ -27,12 +27,13 @@
       <file leaf-file-name="fusion-bypixel.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fusion-bypixel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="206" column="23" selection-start-line="206" selection-start-column="23" selection-end-line="206" selection-end-column="23" />
+            <state relative-caret-position="725">
+              <caret line="214" column="30" selection-start-line="214" selection-start-column="30" selection-end-line="214" selection-end-column="30" />
               <folding>
                 <element signature="e#36#46#0" expanded="true" />
                 <element signature="e#352#2943#0" expanded="false" />
                 <element signature="e#3170#5728#0" expanded="false" />
+                <element signature="e#7076#7110#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -441,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1472647906148</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Testing in linux, 4th algorithm">
+      <created>1472811690537</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1472811690537</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -455,9 +463,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="73" y="59" width="1416" height="1021" extended-state="4" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13659237" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13659237" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912722" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31229597" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="73" y="325" width="1847" height="501" />
@@ -513,6 +521,7 @@
             <element signature="e#36#46#0" expanded="true" />
             <element signature="e#352#2943#0" expanded="false" />
             <element signature="e#3170#5728#0" expanded="false" />
+            <element signature="e#7076#7110#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -536,6 +545,7 @@
             <element signature="e#36#46#0" expanded="true" />
             <element signature="e#352#2943#0" expanded="false" />
             <element signature="e#3170#5728#0" expanded="false" />
+            <element signature="e#7076#7110#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -559,6 +569,7 @@
             <element signature="e#36#46#0" expanded="true" />
             <element signature="e#352#2943#0" expanded="false" />
             <element signature="e#3170#5728#0" expanded="false" />
+            <element signature="e#7076#7110#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -582,6 +593,7 @@
             <element signature="e#36#46#0" expanded="true" />
             <element signature="e#352#2943#0" expanded="false" />
             <element signature="e#3170#5728#0" expanded="false" />
+            <element signature="e#7076#7110#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -605,6 +617,7 @@
             <element signature="e#36#46#0" expanded="true" />
             <element signature="e#352#2943#0" expanded="false" />
             <element signature="e#3170#5728#0" expanded="false" />
+            <element signature="e#7076#7110#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -628,6 +641,7 @@
             <element signature="e#36#46#0" expanded="true" />
             <element signature="e#352#2943#0" expanded="false" />
             <element signature="e#3170#5728#0" expanded="false" />
+            <element signature="e#7076#7110#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -645,12 +659,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fusion-bypixel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="206" column="23" selection-start-line="206" selection-start-column="23" selection-end-line="206" selection-end-column="23" />
+        <state relative-caret-position="725">
+          <caret line="214" column="30" selection-start-line="214" selection-start-column="30" selection-end-line="214" selection-end-column="30" />
           <folding>
             <element signature="e#36#46#0" expanded="true" />
             <element signature="e#352#2943#0" expanded="false" />
             <element signature="e#3170#5728#0" expanded="false" />
+            <element signature="e#7076#7110#0" expanded="false" />
           </folding>
         </state>
       </provider>
