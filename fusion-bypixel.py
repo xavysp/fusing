@@ -5,6 +5,7 @@ matplotlib.use('GTKAgg')  # IF you do't use this line cv2.imshow will give you a
 # from matplotlib import pyplot
 import numpy as np
 import pywt
+import xlwt
 # import time
 
 
@@ -192,23 +193,35 @@ def wavelet_transform_fusion(img1, img2):
 # *5** Function that can fuse with pywt and image
 def waveletTransformFunction(img1, img2):
     imgVl = cv2.cvtColor(img1, cv2.COLOR_RGB2GRAY)
+    row, col = np.shape(imgVl)
     print (imgVl.shape)
     imgNir = cv2.cvtColor(img2, cv2.COLOR_RGB2GRAY)
     wImg= pywt.dwt2(imgVl,'haar')
     cAv, (cHv, cVv, cDv) = wImg
-    showImg = np.int16(cAv[0])
-    cv2.imshow('firstWavelet image', cHv)
-    cv2.imshow('firstWavelet image1', cVv)
-    cv2.imshow('firstWavelet image2', imgVl)
+    cv2.imwrite('temporal.png', cAv)
+    cv2.imshow('cAv', cAv)
+    cv2.imshow('cHv', cHv)
+    cv2.imshow('cVv', cVv)
+    cv2.imshow('cDv', cDv)
+    cv2.imshow('imgVl', imgVl)
+    print (np.shape(cAv))
+    cAv1 = np.int16(cAv)
+    cHv1 = np.int16(cHv)
+    cVv1 = np.int16(cVv)
+    cDv1 = np.int16(cDv)
+    # np.savetxt('texcAv.txt', cAv1)
+    # np.savetxt('texcHv.txt', cHv)
+    # print (cHv1[16:20][:18])
+    # a short code for pyramid
+    imgVlPy = []
+    imgVlPy = cv2.pyrDown(imgVl,)
+    #print (imgVlPy[16:20][:18])
+    cv2.imshow('pyramid image', imgVlPy)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
-    print (cAv.shape)
-    cAv1 = np.int16(cAv)
-    np.savetxt('texcAv.txt', cAv1)
-    np.savetxt('texcHv.txt', cHv)
-    np.sa
-    print (np.int16(cAv))
-
+    a = imgVlPy[0:19][0:17]
+    print (a)
+    print a.shape
 
 
 ############################################
