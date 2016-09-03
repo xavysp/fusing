@@ -192,6 +192,7 @@ def wavelet_transform_fusion(img1, img2):
 
 # *5** Function that can fuse with pywt and image
 def waveletTransformFunction(img1, img2):
+    # whole of the wavelet families: ['haar', 'db', 'sym', 'coif', 'bior', 'rbio', 'dmey']
     imgVl = cv2.cvtColor(img1, cv2.COLOR_RGB2GRAY)
     wImgV= pywt.dwt2(imgVl,'haar')
     cAv, (cHv, cVv, cDv) = wImgV
@@ -237,7 +238,7 @@ print '1: for Laplacian pyramid based fusion'
 print '2: for Contrast pyramid based fusion here is the error'
 print ('3: For hierarchical based fusion')
 print ('4: Wavelet transform based fusion ')
-print ('5: Wavelet transform based fusion using function')
+print ('5: Wavelet transform based fusion using Pywavelet')
 a = input('Choose a number:')
 if a == 1:
     laplacian_pyramid_fusion(imgVl, imgNir)
