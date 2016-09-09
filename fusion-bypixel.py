@@ -1,7 +1,7 @@
 # before to start you have to check
 import cv2
 import matplotlib
-matplotlib.use('GTKAgg')  # IF you do't use this line cv2.imshow will give you an error
+matplotlib.use('GTKAgg')  # IF you don't use this line cv2.imshow will give you an error
 # from matplotlib import pyplot
 import numpy as np
 import pywt

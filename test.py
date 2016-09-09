@@ -1,9 +1,11 @@
 
 #  This coding is only for test bloke of codes
 
-import numpy as np
-from scipy.fftpack import fft, ifft
 import cv2
+from matplotlib import pyplot as plt
+import numpy as np
+# import imageio
+# import rawpy
 
 
 # Computing Discrete Fourier Transform
@@ -43,15 +45,28 @@ def myFt(img):
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
+
+def histogramEqualization(imgI, imgV):
+    imgEq = cv2.cvtColor(imgI, cv2.COLOR_RGB2GRAY)
+    equ = cv2.equalizeHist(imgEq)
+    res = np.hstack((imgEq, equ))  # stacking images side-by-side
+    cv2.imwrite('res.png', equ)
+    # pyramid image
+    imgVlPy = cv2.pyrDown(imgV, )
+    cv2.imwrite('res-v.png', imgVlPy)
+
+
 # read data
 img = cv2.imread('dataset/1826i.bmp')
-
+imgV = cv2.imread('exam_rgb.jpg')
+imgI = cv2.imread('exam2_ir.bmp')
 data1 = [1, 2, 3, 4]
 data2 = [2, 4, 6, 8]
 
-print (computeDft(data1, data2))
-
-myFt(img)
+# print (computeDft(data1, data2))
+#
+# myFt(img)
+histogramEqualization(imgI,imgV)
 
 # opencv fourier transform #
 
