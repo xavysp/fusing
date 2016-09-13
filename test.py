@@ -53,20 +53,20 @@ def histogramEqualization(imgI, imgV):
     cv2.imwrite('res.png', equ)
     # pyramid image
     imgVlPy = cv2.pyrDown(imgV, )
-    cv2.imwrite('res-v.png', imgVlPy)
+    # cv2.imwrite('res-v.png', imgVlPy)
 
 
 # read data
 img = cv2.imread('dataset/1826i.bmp')
 imgV = cv2.imread('exam_rgb.jpg')
-imgI = cv2.imread('exam2_ir.bmp')
+imgI = cv2.imread('exam_ir.bmp')
 data1 = [1, 2, 3, 4]
 data2 = [2, 4, 6, 8]
 
 # print (computeDft(data1, data2))
 #
 # myFt(img)
-histogramEqualization(imgI,imgV)
+histogramEqualization(imgI, imgV)
 
 # opencv fourier transform #
 
