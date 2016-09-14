@@ -1,5 +1,5 @@
 # this code is for color correction
-# moreover this code in tits majority is user from
+# moreover the majority of this code was used from
 # : https://gist.github.com/shunsukeaihara/4603234
 
 
@@ -152,13 +152,12 @@ def standard_deviation_weighted_grey_world(nimg,subwidth,subheight):
     nimg[2] = np.minimum(nimg[2]*gain_b,255)
     return nimg.transpose(1, 2, 0).astype(np.uint8)
 
-# Enter images
-img = Image.open('exam_rgb.jpg')
+# Enter images and calling functions
 
 
 if __name__=="__main__":
     # img = Image.open(sys.argv[1])
-    img = Image.open('exam_rgb.jpg')
+    img = Image.open('exam_rgb2.jpg')
     img.show()
     to_pil(stretch(from_pil(img))).show()
     to_pil(grey_world(from_pil(img))).show()
@@ -166,9 +165,3 @@ if __name__=="__main__":
     to_pil(max_white(from_pil(img))).show()
     to_pil(retinex_adjust(retinex(from_pil(img)))).show()
 to_pil(standard_deviation_weighted_grey_world(from_pil(img),50,50)).show()
-
-
-
-
-
-# calling function

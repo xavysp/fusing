@@ -2,10 +2,9 @@
 #  This coding is only for test bloke of codes
 
 import cv2
-from matplotlib import pyplot as plt
+import matplotlib
+matplotlib.use('GTKAgg')  # IF you don't use this line cv2.imshow will give you an error
 import numpy as np
-# import imageio
-# import rawpy
 
 
 # Computing Discrete Fourier Transform
@@ -56,6 +55,23 @@ def histogramEqualization(imgI, imgV):
     # cv2.imwrite('res-v.png', imgVlPy)
 
 
+def channelImages(imgV):
+    img = cv2.cvtColor(imgV, cv2.Co)
+    # cv2.imshow('image changed', img)
+    # cv2.waitKey(0)
+    # cv2.destroyAllWindows()
+    # cv2.imwrite('exam_rgb2.jpg',img)
+    img2 = np.zeros((np.shape(img)))
+    img2[:][:][0] = img[:][:][0]
+    img2[:][:][1] = img[:][:][1]
+    img2[:][:][2] = img[:][:][2]
+    print (img2[:][:][2] == img[:][:][2])
+    print (np.shape(img), np.shape(img2))
+    cv2.imshow('image changed2', img2)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+
+
 # read data
 img = cv2.imread('dataset/1826i.bmp')
 imgV = cv2.imread('exam_rgb.jpg')
@@ -66,7 +82,7 @@ data2 = [2, 4, 6, 8]
 # print (computeDft(data1, data2))
 #
 # myFt(img)
-histogramEqualization(imgI, imgV)
+channelImages(imgV)
 
 # opencv fourier transform #
 

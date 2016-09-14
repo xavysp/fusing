@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3c6646f-50a7-4937-bd98-0afda83ef9b9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imaging.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/texcAv.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/texcHv.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imaging.py" afterPath="$PROJECT_DIR$/imaging.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
     </list>
     <ignored path="fusing.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,10 +28,9 @@
       <file leaf-file-name="fusion-bypixel.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fusion-bypixel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="218" column="32" selection-start-line="218" selection-start-column="32" selection-end-line="218" selection-end-column="32" />
+            <state relative-caret-position="40">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="88" />
               <folding>
-                <element signature="e#36#46#0" expanded="true" />
                 <element signature="e#353#2944#0" expanded="false" />
                 <element signature="e#3171#5729#0" expanded="false" />
                 <element signature="e#7168#7202#0" expanded="false" />
@@ -41,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+            <state relative-caret-position="260">
+              <caret line="58" column="35" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
               <folding>
                 <element signature="e#49#59#0" expanded="true" />
               </folding>
@@ -53,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="imaging.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="imaging.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imaging.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="161" column="14" selection-start-line="161" selection-start-column="14" selection-end-line="161" selection-end-column="14" />
+            <state relative-caret-position="566">
+              <caret line="139" column="10" selection-start-line="139" selection-start-column="10" selection-end-line="139" selection-end-column="10" />
               <folding>
                 <element signature="e#140#150#0" expanded="true" />
               </folding>
@@ -86,15 +84,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/fusion-bypixel.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/imaging.py" />
+        <option value="$PROJECT_DIR$/test.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="996" />
+    <option name="x" value="67" />
     <option name="y" value="59" />
-    <option name="width" value="924" />
+    <option name="width" value="1188" />
     <option name="height" value="1021" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -122,6 +120,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -142,8 +142,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -165,7 +163,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1223" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
-  <component name="RunManager" selected="Python.imaging">
+  <component name="RunManager" selected="Python.test">
     <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -358,8 +356,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.imaging" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test" />
+        <item index="0" class="java.lang.String" itemvalue="Python.test" />
+        <item index="1" class="java.lang.String" itemvalue="Python.imaging" />
       </list>
     </recent_temporary>
   </component>
@@ -488,10 +486,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="996" y="59" width="924" height="1021" extended-state="4" />
+    <frame x="67" y="59" width="1188" height="1021" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20689656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15821153" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912722" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31229597" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="73" y="325" width="1847" height="501" />
@@ -533,11 +531,6 @@
           <line>218</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/test.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="8" />
     </breakpoint-manager>
@@ -549,7 +542,38 @@
         <state relative-caret-position="1200">
           <caret line="218" column="32" selection-start-line="218" selection-start-column="32" selection-end-line="218" selection-end-column="32" />
           <folding>
-            <element signature="e#36#46#0" expanded="true" />
+            <element signature="e#353#2944#0" expanded="false" />
+            <element signature="e#3171#5729#0" expanded="false" />
+            <element signature="e#7168#7202#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1180">
+          <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+          <folding>
+            <element signature="e#49#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imaging.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#140#150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fusion-bypixel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="218" column="32" selection-start-line="218" selection-start-column="32" selection-end-line="218" selection-end-column="32" />
+          <folding>
             <element signature="e#353#2944#0" expanded="false" />
             <element signature="e#3171#5729#0" expanded="false" />
             <element signature="e#7168#7202#0" expanded="false" />
@@ -572,7 +596,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#36#46#0" expanded="true" />
             <element signature="e#353#2944#0" expanded="false" />
             <element signature="e#3171#5729#0" expanded="false" />
             <element signature="e#7168#7202#0" expanded="false" />
@@ -595,7 +618,6 @@
         <state relative-caret-position="1680">
           <caret line="242" column="10" selection-start-line="242" selection-start-column="10" selection-end-line="242" selection-end-column="10" />
           <folding>
-            <element signature="e#36#46#0" expanded="true" />
             <element signature="e#353#2944#0" expanded="false" />
             <element signature="e#3171#5729#0" expanded="false" />
             <element signature="e#7168#7202#0" expanded="false" />
@@ -618,7 +640,6 @@
         <state relative-caret-position="1680">
           <caret line="242" column="10" selection-start-line="242" selection-start-column="10" selection-end-line="242" selection-end-column="10" />
           <folding>
-            <element signature="e#36#46#0" expanded="true" />
             <element signature="e#353#2944#0" expanded="false" />
             <element signature="e#3171#5729#0" expanded="false" />
             <element signature="e#7168#7202#0" expanded="false" />
@@ -641,7 +662,6 @@
         <state relative-caret-position="1680">
           <caret line="242" column="10" selection-start-line="242" selection-start-column="10" selection-end-line="242" selection-end-column="10" />
           <folding>
-            <element signature="e#36#46#0" expanded="true" />
             <element signature="e#353#2944#0" expanded="false" />
             <element signature="e#3171#5729#0" expanded="false" />
             <element signature="e#7168#7202#0" expanded="false" />
@@ -664,7 +684,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#36#46#0" expanded="true" />
             <element signature="e#353#2944#0" expanded="false" />
             <element signature="e#3171#5729#0" expanded="false" />
             <element signature="e#7168#7202#0" expanded="false" />
@@ -677,7 +696,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#36#46#0" expanded="true" />
             <element signature="e#353#2944#0" expanded="false" />
             <element signature="e#3171#5729#0" expanded="false" />
             <element signature="e#7168#7202#0" expanded="false" />
@@ -690,7 +708,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#36#46#0" expanded="true" />
             <element signature="e#353#2944#0" expanded="false" />
             <element signature="e#3171#5729#0" expanded="false" />
             <element signature="e#7168#7202#0" expanded="false" />
@@ -703,27 +720,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#36#46#0" expanded="true" />
-            <element signature="e#353#2944#0" expanded="false" />
-            <element signature="e#3171#5729#0" expanded="false" />
-            <element signature="e#7168#7202#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1060">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fusion-bypixel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#36#46#0" expanded="true" />
             <element signature="e#353#2944#0" expanded="false" />
             <element signature="e#3171#5729#0" expanded="false" />
             <element signature="e#7168#7202#0" expanded="false" />
@@ -743,7 +739,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#36#46#0" expanded="true" />
             <element signature="e#353#2944#0" expanded="false" />
             <element signature="e#3171#5729#0" expanded="false" />
             <element signature="e#7168#7202#0" expanded="false" />
@@ -763,7 +758,25 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#36#46#0" expanded="true" />
+            <element signature="e#353#2944#0" expanded="false" />
+            <element signature="e#3171#5729#0" expanded="false" />
+            <element signature="e#7168#7202#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1060">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fusion-bypixel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
             <element signature="e#353#2944#0" expanded="false" />
             <element signature="e#3171#5729#0" expanded="false" />
             <element signature="e#7168#7202#0" expanded="false" />
@@ -783,7 +796,6 @@
         <state relative-caret-position="480">
           <caret line="170" column="59" selection-start-line="170" selection-start-column="59" selection-end-line="170" selection-end-column="59" />
           <folding>
-            <element signature="e#36#46#0" expanded="true" />
             <element signature="e#353#2944#0" expanded="false" />
             <element signature="e#3171#5729#0" expanded="false" />
             <element signature="e#7168#7202#0" expanded="false" />
@@ -803,7 +815,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#36#46#0" expanded="true" />
             <element signature="e#353#2944#0" expanded="false" />
             <element signature="e#3171#5729#0" expanded="false" />
             <element signature="e#7168#7202#0" expanded="false" />
@@ -825,34 +836,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fusion-bypixel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="218" column="32" selection-start-line="218" selection-start-column="32" selection-end-line="218" selection-end-column="32" />
-          <folding>
-            <element signature="e#36#46#0" expanded="true" />
-            <element signature="e#353#2944#0" expanded="false" />
-            <element signature="e#3171#5729#0" expanded="false" />
-            <element signature="e#7168#7202#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
-          <folding>
-            <element signature="e#49#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python2.7/dist-packages/colorcorrect/util.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -864,12 +851,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/fusion-bypixel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="88" />
+          <folding>
+            <element signature="e#353#2944#0" expanded="false" />
+            <element signature="e#3171#5729#0" expanded="false" />
+            <element signature="e#7168#7202#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/imaging.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="161" column="14" selection-start-line="161" selection-start-column="14" selection-end-line="161" selection-end-column="14" />
+        <state relative-caret-position="566">
+          <caret line="139" column="10" selection-start-line="139" selection-start-column="10" selection-end-line="139" selection-end-column="10" />
           <folding>
             <element signature="e#140#150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="58" column="35" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
+          <folding>
+            <element signature="e#49#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
