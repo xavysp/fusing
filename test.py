@@ -52,11 +52,11 @@ def histogramEqualization(imgI, imgV):
     cv2.imwrite('res.png', equ)
     # pyramid image
     imgVlPy = cv2.pyrDown(imgV, )
-    # cv2.imwrite('res-v.png', imgVlPy)
+    cv2.imwrite('res-v.png', imgVlPy)
 
 
 def channelImages(imgV):
-    img = cv2.cvtColor(imgV, cv2.Co)
+    img = cv2.cvtColor(imgV, cv2.COLOR_BAYER_GB2BGR)
     # cv2.imshow('image changed', img)
     # cv2.waitKey(0)
     # cv2.destroyAllWindows()
@@ -82,7 +82,8 @@ data2 = [2, 4, 6, 8]
 # print (computeDft(data1, data2))
 #
 # myFt(img)
-channelImages(imgV)
+# channelImages(imgV)
+histogramEqualization(imgI, imgV)
 
 # opencv fourier transform #
 

@@ -24,9 +24,9 @@ def laplacian_pyramid_fusion(img1, img2):
         gImgNir = cv2.pyrDown(gpImgNir[i])
         gpImgNir.append(gImgNir)
         # just for me
-        cv2.imshow('image pyramid:', gpImgNir[i])
-        cv2.waitKey(0)
-        cv2.destroyAllWindows()
+        # cv2.imshow('image pyramid:', gpImgNir[i])
+        # cv2.waitKey(0)
+        # cv2.destroyAllWindows()
 
     # generate laplacian pyramid for visible image
     lpImgVl = [gpImgVl[5]]
@@ -46,9 +46,9 @@ def laplacian_pyramid_fusion(img1, img2):
         print 'L: ', L.shape
         lpImgNir.append(L)
         # just for me
-        cv2.imshow('Laplacian pyramid:', lpImgNir[5-i])
-        cv2.waitKey(0)
-        cv2.destroyAllWindows()
+        # cv2.imshow('Laplacian pyramid:', lpImgNir[5-i])
+        # cv2.waitKey(0)
+        # cv2.destroyAllWindows()
 
     # ****** Now add left and right halves of image in each level ******
     # the function np.hstack blend and split two images
@@ -56,7 +56,7 @@ def laplacian_pyramid_fusion(img1, img2):
     o=0
     for lv, ln in zip(lpImgVl, lpImgNir):
         rows, cols, dpt = lv.shape
-        ls = lv
+        ls = ln
         # ls = np.hstack((lv[:, 0:cols/2], ln[:, cols/2:]))
         # ls = np.hstack((lv[:, 0:cols], ln[:, cols:]))
         for k in xrange(dpt):
@@ -66,9 +66,9 @@ def laplacian_pyramid_fusion(img1, img2):
                         ls[i][j][k] = ln[i][j][k]
         LS.append(ls)
         # just for me
-        cv2.imshow('Fused images:', LS[o])
-        cv2.waitKey(0)
-        cv2.destroyAllWindows()
+        # cv2.imshow('Fused images:', LS[o])
+        # cv2.waitKey(0)
+        # cv2.destroyAllWindows()
         o += 1
     # now reconstruct I cannot understand how works this
     ls_ = LS[0]
@@ -227,8 +227,10 @@ def waveletTransformFunction(img1, img2):
 
 ############################################
 # Imput data #
-imgVl = cv2.imread('dataset/1826v.bmp')
-imgNir = cv2.imread('dataset/1826i.bmp')
+# imgVl = cv2.imread('dataset/1826v.bmp')
+# imgNir = cv2.imread('dataset/1826i.bmp')
+imgVl = cv2.imread('res-v.png')
+imgNir = cv2.imread('exam_ir.bmp')
 print imgVl.shape, imgNir.shape
 
 #####################################
@@ -241,7 +243,7 @@ print ('4: Wavelet transform based fusion ')
 print ('5: Wavelet transform based fusion using Pywavelet')
 a = input('Choose a number:')
 if a == 1:
-    laplacian_pyramid_fusion(imgVl, imgNir)
+    laplacian_pyramid_fusion(imgNir, imgVl)
 elif a == 2:
     contrast_pyramid(imgVl, imgNir)
 elif a == 3:
