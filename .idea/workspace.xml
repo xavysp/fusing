@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3c6646f-50a7-4937-bd98-0afda83ef9b9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exam_ir.bmp" afterPath="$PROJECT_DIR$/exam_ir.bmp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exam_rgb.jpg" afterPath="$PROJECT_DIR$/exam_rgb.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res.png" afterPath="$PROJECT_DIR$/res.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fusion-bypixel.py" afterPath="$PROJECT_DIR$/fusion-bypixel.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
     </list>
     <ignored path="fusing.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -477,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1472915452445</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Testing in linux, 4th algorithm">
+      <created>1474365120518</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1474365120518</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView">
