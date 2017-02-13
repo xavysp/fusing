@@ -18,9 +18,11 @@ def laplacian_pyramid_fusion(img1, img2):
         gImgVl = cv2.pyrDown(gpImgVl[i])
         gpImgVl.append(gImgVl)
     # generating Gaussian pyramid for nir image
-    gImgNir = img2.copy()
+    gImgNir = img2
     gpImgNir = [gImgNir]  # gpB
+    gi=[]
     for i in xrange(6):
+        cv2.pyrDown(gpImgNir[i],gi)
         gImgNir = cv2.pyrDown(gpImgNir[i])
         gpImgNir.append(gImgNir)
         # just for me
@@ -229,9 +231,9 @@ def waveletTransformFunction(img1, img2):
 # Imput data #
 # imgVl = cv2.imread('dataset/1826v.bmp')
 # imgNir = cv2.imread('dataset/1826i.bmp')
-imgVl = cv2.imread('res-v.png')
 imgNir = cv2.imread('exam_ir.bmp')
-print imgVl.shape, imgNir.shape
+imgVl = cv2.imread('exam_rgb.jpg')
+# print imgVl.shape, imgNir.shape
 
 #####################################
 # Results #
